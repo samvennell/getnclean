@@ -1,0 +1,114 @@
+---
+title: "Codebook"
+author: "Sam Vennell"
+date: 27 Aug 2016
+output: pdf_document
+---
+
+# CODEBOOK for "UCIHAR_meansd_avg.txt"
+## *Data file located in the "dataoutput" directory*
+## Sam Vennell -  27 Aug 2016
+
+Each of the columns is described below with possible values listed.  
+
+*subject_ID*  
+&nbsp;&nbsp;&nbsp;    The subject ID, as provided in the files "/test/subject_test.txt" and "/train/subject_test.txt" in the UCI  
+&nbsp;&nbsp;&nbsp;&nbsp; HAR Dataset.  
+&nbsp;&nbsp;&nbsp;    Has integer value, ranging from 1-30.  
+      
+*activity_ID*  
+&nbsp;&nbsp;&nbsp;    The activity ID, as provided in the files "/test/y_test.txt" and "/train/y_train.txt" in the UCI HAR  
+&nbsp;&nbsp;&nbsp;&nbsp;Dataset.  
+&nbsp;&nbsp;&nbsp;    Has integer value, ranging from 1-6, corresponding the activity descriptions (activitydesc):  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    1.  WALKING   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    2.  WALKING_UPSTAIRS  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    3.  WALKING_DOWNSTAIRS  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    4.  SITTING   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   5.  STANDING  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   6.  LAYING   
+  
+*activitydesc*   
+&nbsp;&nbsp;&nbsp;    The activity description corresponding to "activity_ID" above.  
+&nbsp;&nbsp;&nbsp;   Values are those provided for activity_ID (eg "WALKING", "WALKING_UPSTAIRS" etc)  
+  
+*variable*   
+&nbsp;&nbsp;&nbsp;    The measured variable (mean or standard deviation) being averaged.  
+&nbsp;&nbsp;&nbsp;   Possible values are:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(tBodyAccJerkMean),gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(tBodyAccMean,gravity)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(tBodyGyroJerkMean,gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(tBodyGyroMean,gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(X,gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(Y,gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         angle(Z,gravityMean)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAcc-std()-Z   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-mean()-Y   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccJerk-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyAccMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyAccJerkMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyAccJerkMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyGyroJerkMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyGyroJerkMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyGyroMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyBodyGyroMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         fBodyGyro-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAcc-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerk-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerkMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccJerkMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyAccMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyro-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerk-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerkMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroJerkMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tBodyGyroMag-std()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-mean()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-mean()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-mean()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-std()-X  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-std()-Y  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAcc-std()-Z  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAccMag-mean()  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         tGravityAccMag-std()    
+  
+*average*    
+&nbsp;&nbsp;&nbsp;  The average (mean) of the variable [which will itself by a mean or standard deviation of some measured  
+&nbsp;&nbsp;&nbsp;&nbsp;  quantity], for the given subject and activity.  
+
