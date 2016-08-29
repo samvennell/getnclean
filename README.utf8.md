@@ -27,5 +27,5 @@ Finally, the average (mean) of each variable for each activity and subject is ca
   
 * I have opted to have the final data frame in "narrow" format, and to keep the original variable names.  This qualifies as tidy data because it is easy to manipulate, plot and perform further summarisation with.  This is confirmed in Hadley Wickham's paper "Tidy Data" [http://vita.had.co.nz/papers/tidy-data.pdf](http://vita.had.co.nz/papers/tidy-data.pdf).
 
-* I have chosen to include the "angle" means, eg "angle(Z,gravityMean)", as well as the mean and standard devation variables in the standard format (eg "fBodyGyro-std()-Y"), as the initial assignment brief was vague with regard to this matter.  \
+* I have chosen to include the "angle" means, eg "angle(Z,gravityMean)", as well as the mean and standard devation variables in the standard format (eg "fBodyGyro-std()-Y"), as the initial assignment brief was vague with regard to this matter.  
 * I could have chosen to decompose the variable names into multiple fields, eg "tBodyAcc-std()-X" into three fields "tBodyAcc", "std()" and "X" but I opted not to since the formatting of the variable names is not uniform (as with the "angle(Z,gravityMean)" example given above).

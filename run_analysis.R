@@ -87,4 +87,4 @@
   
   ##  Write this final table to "UCIHAR_meansd_avg.txt" in the "dataoutput" directory      
   
-  write.table(UCIHAR_meansd_avg, file= paste0(getwd(),"/dataoutput/UCIHAR_meansd_avg.txt"))
+  write.table(UCIHAR_meansd_avg, file= paste0(getwd(),"/dataoutput/UCIHAR_meansd_avg.txt"),row.name=FALSE)
